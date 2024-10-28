@@ -1,7 +1,7 @@
 num = int(input("enter number : "))
 num_ant = num - 1
 creixent = True
-while num != 0:
+while num != 0 and creixent:
     if num < num_ant:
         creixent = False 
     num_ant = num
