@@ -1,22 +1,20 @@
 num = int(input("enter number: "))
-cont = 0
-num_ant = num - 1
-longtitud = 1
+num_ant = num
+longitud_max = 0
+
 while num != 0 :
-
-    if longtitud < cont:
-        longtitud = cont 
-
-    cont = 0
     
-    num_ant = num
-    num = int(input("enter number 3: "))
-    
+    longitud = 0
+   
     while (num == num_ant) and (num != 0):
-        cont += 1 
+        longitud += 1 
         num_ant = num
         num = int(input("enter number 2: "))
+    
+    if longitud_max < longitud:
+        longitud_max = longitud
+    
+    num_ant = num
         
     
-    
-print(longtitud)
+print(longitud_max)
